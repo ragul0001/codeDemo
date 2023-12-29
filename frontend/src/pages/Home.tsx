@@ -22,32 +22,44 @@ const Home = () => {
   return (
     <div className="container mx-auto max-w-7xl px-8 ">
       <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
-        <div  className={`bg-blue-500 ${ isLandscape ? 'w-[500px] h-auto' : 'w-auto h-auto'}`}>
-              <div className={`w-full h-full relative bg-slate-700 `}>
-                          <div className=' text-white '>
-                                 <div className='p-6'>
-                                   <form>
-                                    <div className="mb-4">
-                                      <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
-                                      <input type="text" id="name" name="name" className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Your Name" required/>
+        <div  className={`bg-blue-500 ${ isLandscape ? ' w-full h-auto' : ' h-auto'}`}>
+              <div className={`h-full relative bg-yellow-700 `}>
+                          <div className=''>
+                          <div className='flex  basis-1/2 '>
+                          <div className='border border-b p-2 rounded-lg'>
+                                <div className='flex '>
+                                      <div className='flex items-center'>
+                                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                          <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                                          </svg>
+                                      </div>
+                                      <div className='mx-5'>
+                                          <h3 className='text-[20px] font-bold '>Send us a message</h3>
+                                      </div>
+                                </div>  
+                                <div className='flex flex-col flex-wrap mt-5 '>
+                                    <div className=''>
+                                       <label htmlFor="name" className='text-[15px] font-normal'>Name:</label><br/>
+                                       <input type="text" name='name'  className='border border-Cborder bg-white p-2 w-80 md:w-96' />
                                     </div>
-
-                                    <div className="mb-4">
-                                      <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-                                      <input type="email" id="email" name="email" className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Your Email" required/>
+                                    <div className=''>
+                                       <label htmlFor="email" className='text-[15px] font-normal'>email:</label><br/>
+                                       <input type="email" name='email'  className='border border-Cborder bg-white p-2 w-80 md:w-96' />
                                     </div>
-
-                                    <div className="mb-4">
-                                      <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                                      <textarea id="message" name="message" className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Your Message"  required></textarea>
-                                    </div>
-
-                                    <div className="flex justify-end">
-                                      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Submit</button>
-                                    </div>
-
-                                    </form>
-                                 </div>
+                                </div>
+                                <div className="my-4">
+                                    <label htmlFor="name" className='text-[15px] font-normal'>Message
+                                    <textarea className="shadow form-textarea mt-1 block border-Cborder rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows={5} placeholder="Textarea"></textarea>
+                                    </label>
+                                </div>
+                                <div className='my-2 p-3 flex justify-center'>
+                                           <div className='mx-2 border bg-blue-900 rounded-full'>
+                                                <button className='p-3 w-32 bg-Cpurple text-white rounded-full text-center'>Submit</button>
+                                           </div>
+                                </div>
+                                
+                          </div>
+                    </div>
                           </div>
               </div>
         </div>
