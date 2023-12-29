@@ -23,7 +23,7 @@ const Home = () => {
     <div className="container mx-auto max-w-7xl px-8 ">
       <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
         <div  className={`bg-blue-500 ${ isLandscape ? 'w-[500px] h-auto' : 'w-auto h-auto'}`}>
-              <div className={`w-full h-full relative bg-slate-700 ${isLandscape ? 'object-cover ' : 'object-contain'}`}>
+              <div className={`w-full h-full relative bg-slate-700 `}>
                           <div className=' text-white '>
                                  <div className='p-6'>
                                    <form>
