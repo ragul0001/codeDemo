@@ -19,10 +19,15 @@ const Home = () => {
     };
   }, []);
 
+  // Check for mobile device screen width
+  const isMobile = window.innerWidth <= 768; // Adjust the value based on your design needs
+
+
+
   return (
     <div className="container mx-auto max-w-7xl px-8 ">
       <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
-        <div  className={`bg-blue-500 ${ isLandscape ? ' w-full h-auto' : ' h-auto'}`}>
+        <div  className={`bg-blue-500  ${isLandscape && isMobile ? 'w-full h-auto' : 'h-auto'}`}>
               <div className={`h-full relative bg-yellow-700 `}>
                           <div className=''>
                           <div className='flex  basis-1/2 '>
